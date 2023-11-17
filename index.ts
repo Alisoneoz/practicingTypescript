@@ -27,3 +27,21 @@ blablito = 5 // it will not allow you to assign different types to the variable
 
 
 // IN CONCLUSION --> to specify te type --> add a colon and specify the type
+
+
+// besides boolean, number, string, array, unknown, any, void
+//you can also have --> enum and tuple which you normally don't have in JS
+
+    //Tuple --> allows to express an array with a fixed number of elements whose types are known, 
+        //but don't need to be the same
+
+        //For Example:
+
+        type stringAndNumber = [ string, number]; // the first element is a string and the second element is a number
+
+        // here in the above example, we've also created a special type that we can after use to declare explicit types
+
+        //like in here, you can see what is that explicit type by hoverin on top of it:
+
+        let x: stringAndNumber = ["Hello, michi", 7] // if you try assigning different value types it will give you an error
+
