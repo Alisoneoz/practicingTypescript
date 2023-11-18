@@ -45,3 +45,20 @@ blablito = 5 // it will not allow you to assign different types to the variable
 
         let x: stringAndNumber = ["Hello, michi", 7] // if you try assigning different value types it will give you an error
 
+    // Enums
+        // they follow a structure similar to the objects
+
+    enum ConstantsForTheExample{ //if you dont specify anything, they will have a self-incrementing value starting from 0 --> so the first constant will have a value of 0, followed by 1 for the 2nd, then 2 for the 3rd etc...
+        Constant_1,
+        Constant_2,
+        Constant_3,
+        Constant_4,
+        Constant_5,
+        Constant_6,
+        Constant_7,
+
+    }
+
+    // as their values are self incrementing you use enums for case where you dont care about the actual value
+    // cases where you just want the value to be distint from others
+        // He menctioned redux and the type and the actions
