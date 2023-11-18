@@ -62,3 +62,22 @@ blablito = 5 // it will not allow you to assign different types to the variable
     // as their values are self incrementing you use enums for case where you dont care about the actual value
     // cases where you just want the value to be distint from others
         // He menctioned redux and the type and the actions
+    
+    
+// Interfaces
+
+// to create objects and specify the types of every property
+
+interface TheInterface { //write it starting with a capital letter
+    property1: string; //use semicolons instead of commas
+    property2: number;
+}
+
+// is like creating a special type that works for objects
+// take a look of how we¿ll use it in the example below.
+
+const user: TheInterface ={
+    property1:"The string",
+    property2: 1,
+
+} //if you add another property that doesn't match the interface of the type, TypeScript will warn you
