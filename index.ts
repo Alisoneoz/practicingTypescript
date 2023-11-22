@@ -79,5 +79,30 @@ interface TheInterface { //write it starting with a capital letter
 const user: TheInterface ={
     property1:"The string",
     property2: 1,
-
 } //if you add another property that doesn't match the interface of the type, TypeScript will warn you
+
+//Composing Types --> Union
+
+    // you can declare a type that can be one of many types
+    // Useful case for Unions --> describing a set of strings and numbers that a value that is allowed to be
+        // For example
+
+        type WindowStates = "open" | "closed" | "minimized" // it cannot be other than this for a PC window
+
+        // so if we were to declare a variable using this type you created...
+
+        const windowState: WindowStates = "random value of a string different from the value I said before it could be";
+
+        // He will tell you that is not assignable to type 'WindowStates', because it differs from what you said what the values could be
+
+            // Another example
+
+            type LockStates = "Locked" | "unlocked";
+
+            type OddNumbersUnderTen = 1 | 3 | 5 | 7 | 9 ;
+
+            const odd: OddNumbersUnderTen = 6; // this gives error
+
+
+
+
