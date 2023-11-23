@@ -103,6 +103,15 @@ const user: TheInterface ={
 
             const odd: OddNumbersUnderTen = 6; // this gives error
 
+         // Unions also provide a way to handle different types
 
+            //Example let's create a funtion that gives us the length, like of an array
 
+            const getLength = (param: string | string[]) => { // with params you say which type can the parameters be.  syntax is like this typeofdata(string or number, etc)[] ---> for example -> number[]
+                return param.length
+            };
 
+            getLength('test'); // 4 --> be cause it has 4 characters
+
+            getLength(['test', 'test1']); // 2 --> be cause it has two elements
+            
